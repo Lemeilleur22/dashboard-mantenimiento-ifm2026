@@ -485,7 +485,7 @@ with tab3:
             legend_title="Area",
             margin=dict(t=60, b=20, l=20, r=20)
         )
-    st.pyplot(fig_dona, use_container_width=True)
+        st.plotly_chart(fig_dona, use_container_width=True)
 
 # -----------------------------
 # TOP FALLAS
