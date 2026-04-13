@@ -299,7 +299,7 @@ with tab2:
         column_config={
             "MES": st.column_config.TextColumn("Mes"),
             "FALLAS": st.column_config.NumberColumn("Fallas", format="%d"),
-            "tiempo_total_min": st.column_config.NumberColumn("Tiempo total (min)", "%.2f"),
+            "tiempo_total_min": st.column_config.NumberColumn("Tiempo total (min)", format="%.2f"),
             "MTTR_MIN": st.column_config.NumberColumn("MTTR (min)", format="%.2f"),
             "MTTR_HR": st.column_config.NumberColumn("MTTR (hr)", format="%.2f"),
             "MTBF_MIN": st.column_config.NumberColumn("MTBF (min)", format="%.2f"),
