@@ -167,7 +167,7 @@ def multiselect_con_todos(label, opciones, key):
 
 
 # Boton para restablecer filtros
-if st.sidebar.button("Reestablecer filtros"):
+if st.sidebar.button("Restablecer filtros"):
     st.session_state["filtro_mes"] = ["TODOS"]
     st.session_state["filtro_area"] = ["TODOS"]
     st.session_state["filtro_comedor"] = ["TODOS"]
