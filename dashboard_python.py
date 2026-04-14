@@ -725,7 +725,7 @@ with tab5:
 
         df_mostrar = df_correctivos_abiertos[columnas_mostrar]
 
-        df_estilizado = df_mostrar.style.applymap(
+        df_estilizado = df_mostrar.style.map(
             resaltar_dias,
             subset=["DIAS_ABIERTOS"]
         )
