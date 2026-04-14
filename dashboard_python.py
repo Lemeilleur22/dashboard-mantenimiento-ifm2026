@@ -96,7 +96,7 @@ if ruta_correctivos.exists():
     )
     df_correctivos = df_correctivos.rename(columns={
         "NUMERO CM" : "NUMERO_CM",
-        "REFACCIONES" : "REFFACION_SOLICITADA",
+        "REFACCIONES" : "REFACCION_SOLICITADA",
         "CANTIDAD" : "CANTIDAD",
         "DIAS ABIERTOS" : "DIAS_ABIERTOS"
     })
