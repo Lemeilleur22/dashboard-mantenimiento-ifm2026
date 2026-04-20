@@ -137,7 +137,7 @@ else:
     # ---------------------
     # GUARDAR EN SUPABASE
     # ---------------------
-    for _, row in pendientes_update.interrows():
+    for _, row in pendientes_update.iterrows():
         supabase.table("correctivos").update({
             "fecha_cierre": hoy_sql
         }).eq("id", row["ID"]).execute()
