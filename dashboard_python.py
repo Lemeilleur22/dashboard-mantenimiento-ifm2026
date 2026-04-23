@@ -1085,7 +1085,7 @@ with tab5:
 
         # SEMAFORO
         df_mostrar["SEMAFORO"] = df_mostrar["DIAS_ABIERTOS"].apply(
-            lambda x: "‼️" if x >= 30 else "⚠️" if x >= 15 else "✅"
+            lambda x: "Critico‼️" if x >= 30 else "Advertencia ⚠️" if x >= 15 else "Reciente ✅"
         )
 
         # ORDENAR
