@@ -573,16 +573,17 @@ with tab1:
         st.success("MTBF controlado ✅")
 
 # Insights automáticos
-    mes_peor_mttr = reporte.sort_values("MTTR_MIN", ascending=False).iloc[0]
-    mes_peor_mtbf = reporte.sort_values("MTBF_MIN", ascending=False).iloc[0]
+    if set(meses_sel) == set(meses_disponibles):
+        mes_peor_mttr = reporte.sort_values("MTTR_MIN", ascending=False).iloc[0]
+        mes_peor_mtbf = reporte.sort_values("MTBF_MIN", ascending=False).iloc[0]
 
-    st.info(
-        f"El mes con mayor MTTR fue {mes_peor_mttr['MES']} con {mes_peor_mttr['MTTR_MIN']} min."
-    )
+        st.info(
+            f"El mes con mayor MTTR fue {mes_peor_mttr['MES']} con {mes_peor_mttr['MTTR_MIN']} min."
+        )
 
-    st.info(
-        f"El mes con menor MTBF fue {mes_peor_mtbf['MES']} con {mes_peor_mtbf['MTBF_MIN']} min."
-    )
+        st.info(
+            f"El mes con menor MTBF fue {mes_peor_mtbf['MES']} con {mes_peor_mtbf['MTBF_MIN']} min."
+        )
 
 # -----------------------------
 # RESUMEN MENSUAL
