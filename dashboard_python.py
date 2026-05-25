@@ -1365,6 +1365,8 @@ with tab6:
         "historico_correctivos").select("*").range(0, 5000).execute()
     df_cm = pd.DataFrame(response_hist.data)
 
+    st.error(f"REGISTROS LEÍDOS DESDE SUPABASE: {len(df_cm)}")
+
     if not df_cm.empty:
 
         df_cm["cdate"] = pd.to_datetime(df_cm["cdate"], errors="coerce")
