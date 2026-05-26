@@ -1442,7 +1442,7 @@ with tab6:
 
         df_tend = df_cm_filtrado[df_cm_filtrado["cdate"].notna()].copy()
 
-        df_tend["anio"] = df_tend["cdate"].dt.year
+        df_tend["ANIO"] = df_tend["cdate"].dt.year
         df_tend["MES_NUM"] = df_tend["cdate"].dt.month
 
         col_a, col_b, col_c = st.columns(3)
